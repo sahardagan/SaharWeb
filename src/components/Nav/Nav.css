@@ -1,0 +1,98 @@
+/* src/components/Nav/Nav.css */
+
+.nav {
+    background-color: #333; /* צבע הרקע של ה-nav */
+    padding: 10px;
+    z-index: 1000; /* לוודא שהתפריט נמצא מעל לתוכן */
+    position: fixed; 
+    width: 90%; /* שינוי מ-position: relative ל-fixed במסך מלא */
+    left: 5%; /* ממוקם במרכז */
+    top: 10px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-toggle {
+    background: none;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-links {
+    position: fixed; /* לעגן את התפריט למסך */
+    top: 0; /* להתחיל מהחלק העליון */
+    right: -250px; /* למקם את התפריט מחוץ למסך */
+    height: 100vh; /* גובה של כל המסך */
+    width: 250px; /* רוחב התפריט */
+    background-color: #444; /* צבע הרקע של התפריט */
+    transition: right 0.3s ease; /* אנימציה חלקה כאשר התפריט נפתח/נסגר */
+    display: flex;
+    flex-direction: column; /* סידור הלינקים בעמודה */
+    padding: 20px; /* רווח פנימי */
+}
+
+.nav-links a:first-child {
+    display: none; /* אם יש לינק ראשון, הסתר אותו */
+}
+
+.nav-links a {
+    padding: 15px 20px; /* ריווח פנימי עבור כל לינק */
+    text-decoration: none; /* ביטול קו תחתון */
+    color: #fcf3f3; /* צבע טקסט */
+    border-bottom: 1px solid white; /* קו תחתון לבן */
+}
+
+.nav-links a:last-child {
+    border-bottom: none; /* הסר את הקו האחרון */
+}
+
+.nav-links.open {
+    right: 0; /* תפריט פתוח מצד ימין */
+    z-index: 1000; /* ודא שהתפריט מעל לתוכן אחר */
+}
+
+.nav-close {
+    align-self: flex-start; /* מיקום הכפתור למעלה */
+    font-size: 24px; /* גודל כפתור הסגירה */
+    background: none; /* ביטול הרקע */
+    border: none; /* ביטול גבול */
+    cursor: pointer; /* צורת סמן כף יד */
+    margin: 0; /* ריווח חיצוני */
+}
+
+.register-button {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid white; /* עיצוב בסיסי לכפתור הרשמה */
+    border-radius: 5px;
+}
+
+/* מדיה קווריז */
+@media (min-width: 768px) {
+    .nav {
+        position: fixed; /* מתקן כאן את המיקום */
+        top: 10px;
+        width: 90%; /* רוחב ה-nav */
+        left: 5%; /* ממוקם במרכז */
+    }
+    
+    .nav-links {
+        display: flex; /* מציג את הלינקים */
+        flex-direction: row; /* להציג אותם בשורה */
+        position: static; /* לא לעגן בגדלים גדולים */
+        height: auto; /* גובה אוטומטי */
+        background-color: transparent; /* צבע שקוף */
+        right: 0; /* ממוקם בצד ימין */
+    }
+    
+    .nav-toggle {
+        display: none; /* להסתיר את כפתור ההמבורגר בגדלים גדולים */
+    }
+}

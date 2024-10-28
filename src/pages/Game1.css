@@ -1,0 +1,43 @@
+.game1 {
+    height: 90%;
+    padding: 20px; /* רווח פנימי */
+    background-color: #f9f9f9; /* צבע רקע בהיר */
+    border: 1px solid #ddd; /* גבול עדין */
+    border-radius: 8px; /* פינות מעוגלות */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* צל עדין */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game1 h1 {
+    color: #333; /* צבע טקסט לכותרת */
+    font-size: 2rem; /* גודל טקסט גדול יותר */
+    margin-bottom: 10px; /* רווח תחתון */
+}
+
+.game1 p {
+    color: #555; /* צבע טקסט להוראות המשחק */
+    font-size: 1.1rem; /* גודל טקסט רגיל */
+    margin-bottom: 20px; /* רווח תחתון */
+}
+
+.answers {
+    display: flex;
+    flex-direction: column; /* סידור הכפתורים בעמודה */
+    gap: 10px; /* רווח בין הכפתורים */
+}
+
+.answer-button {
+    background-color: #333; /* צבע רקע כפתור */
+    color: white; /* צבע טקסט לבן */
+    padding: 10px 15px; /* ריווח פנימי */
+    border: none; /* הסרת גבול */
+    border-radius: 5px; /* פינות מעוגלות */
+    cursor: pointer; /* צורת יד */
+    transition: background-color 0.3s; /* אנימציה חלקה על שינוי צבע */
+}
+
+.answer-button:hover {
+    background-color: #555; /* צבע רקע כהה יותר בעת ריחוף */
+}

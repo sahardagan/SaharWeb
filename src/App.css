@@ -1,0 +1,34 @@
+/* עיצוב הרקע שמסביב */
+.background-container {
+    background-image: url('/public/pexels-steve-29067691.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* עיצוב תוכן מרכזי */
+.center-content {
+    height: 100%;
+    width: 80%;
+    max-width: 800px; /* ניתן לשנות לפי הצורך */
+    padding: 20px;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    border-radius: 8px;
+}
+
+/* עיצוב רספונסיבי למסכים קטנים */
+@media (max-width: 768px) {
+    
+    .center-content {
+        width: 100%; /* פריסת התוכן על כל הרוחב */
+        max-width: none;
+        height: auto;
+        box-shadow: none; /* הסרת הצללה */
+        border-radius: 0; /* ביטול פינות מעוגלות */
+    }
+}

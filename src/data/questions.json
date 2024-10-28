@@ -1,0 +1,29 @@
+[
+    {
+        "question": "מהו תג ה-HTML הבסיסי?",
+        "answers": [
+            { "text": "<html>", "correct": true },
+            { "text": "<head>", "correct": false },
+            { "text": "<body>", "correct": false },
+            { "text": "<title>", "correct": false }
+        ]
+    },
+    {
+        "question": "איך ניתן להוסיף תמונה לדף HTML?",
+        "answers": [
+            { "text": "<image src='url'>", "correct": false },
+            { "text": "<img src='url'>", "correct": true },
+            { "text": "<picture src='url'>", "correct": false },
+            { "text": "<pic src='url'>", "correct": false }
+        ]
+    },
+    {
+        "question": "מהו תג הכותרת הראשי בדף HTML?",
+        "answers": [
+            { "text": "<h1>", "correct": true },
+            { "text": "<title>", "correct": false },
+            { "text": "<header>", "correct": false },
+            { "text": "<h6>", "correct": false }
+        ]
+    }
+]

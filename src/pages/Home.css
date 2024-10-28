@@ -1,0 +1,49 @@
+.home {
+    padding: 20px; /* רווח פנימי מסביב לתוכן */
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.home h1 {
+    color: #333; /* צבע טקסט לכותרת */
+    font-size: 2rem; /* גודל טקסט גדול יותר */
+    margin-bottom: 20px; /* רווח תחתון */
+}
+
+.games-grid {
+    display: grid; /* נשתמש ברשת עבור המשחקים */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* עיצוב רשת גמיש */
+    gap: 20px; /* רווח בין המשחקים */
+}
+
+.game-card {
+    background-color: #fff; /* צבע רקע עבור כרטיס המשחק */
+    border: 1px solid #ddd; /* גבול עדין */
+    border-radius: 8px; /* פינות מעוגלות */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* צל עדין */
+    padding: 15px; /* רווח פנימי */
+    transition: transform 0.3s; /* אנימציה חלקה בעת ריחוף */
+}
+
+.game-card:hover {
+    transform: scale(1.05); /* הגדלה קלה בעת ריחוף */
+}
+
+.start-game-button {
+    background-color: #333; /* צבע רקע כפתור */
+    color: white; /* צבע טקסט לבן */
+    padding: 10px 15px; /* ריווח פנימי */
+    border: none; /* הסרת גבול */
+    border-radius: 5px; /* פינות מעוגלות */
+    cursor: pointer; /* צורת יד */
+    transition: background-color 0.3s; /* אנימציה חלקה על שינוי צבע */
+}
+
+.start-game-button:hover {
+    background-color: #555; /* צבע רקע כהה יותר בעת ריחוף */
+}
+
+.login-prompt {
+    color: #ff0000; /* צבע טקסט אדום עבור הודעות */
+    font-size: 1.2rem; /* גודל טקסט גדול יותר */
+}
+
